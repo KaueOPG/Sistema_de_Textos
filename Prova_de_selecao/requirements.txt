@@ -1,0 +1,8 @@
+streamlit
+joblib
+pandas
+scikit-learn
+pyspellchecker
+nltk
+spacy
+pt_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.7.1/pt_core_news_sm-3.7.1-py3-none-any.whl
