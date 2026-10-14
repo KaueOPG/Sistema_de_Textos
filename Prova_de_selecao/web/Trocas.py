@@ -1,12 +1,7 @@
 import random
 import spacy
 
-try:
-    nlp = spacy.load("pt_core_news_sm")
-except OSError:
-    from spacy.cli import download
-    download("pt_core_news_sm")
-    nlp = spacy.load("pt_core_news_sm")
+nlp = spacy.load("pt_core_news_sm")
 
 # Mapeamento para artigos e pronomes
 ARTIGOS_E_PRONOMES = {
