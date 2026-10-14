@@ -1,14 +1,12 @@
 import random
 import spacy
 
-# Carrega o modelo de Processamento de Linguagem Natural em Português
 try:
     nlp = spacy.load("pt_core_news_sm")
 except OSError:
-    raise RuntimeError(
-        "Modelo do spaCy não encontrado. Execute no terminal:\n"
-        "python -m spacy download pt_core_news_sm"
-    )
+    from spacy.cli import download
+    download("pt_core_news_sm")
+    nlp = spacy.load("pt_core_news_sm")
 
 # Mapeamento para artigos e pronomes
 ARTIGOS_E_PRONOMES = {
