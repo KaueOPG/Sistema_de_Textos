@@ -1,9 +1,13 @@
 import re
 import nltk
+
+for pacote in ["stopwords", "punkt", "punkt_tab", "rslp"]:
+    nltk.download(pacote, quiet=True)
+
 from Calculo_canonicidade import e_canonica
-from nltk.corpus import stopwords  
-from nltk.stem import RSLPStemmer  
-from nltk.tokenize import sent_tokenize, word_tokenize 
+from nltk.corpus import stopwords
+from nltk.stem import RSLPStemmer
+from nltk.tokenize import sent_tokenize, word_tokenize
 
 STOPWORDS = set(stopwords.words("portuguese"))
 stemmer = RSLPStemmer()
