@@ -24,7 +24,7 @@ spell = SpellChecker(language="pt")
 
 st.set_page_config(
     page_title="Classificador & Troca de Gênero",
-    page_icon="🎓",
+    page_icon="📚",
     layout="wide"
 )
 
